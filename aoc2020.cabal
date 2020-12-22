@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 10317e33fee298216a0cee699146849d3b271a6200a2f3805b774fdc11664707
+-- hash: 65e115eed344a30a037d83ae7e953f4b5e4c84ef59d359fc099cf850b0eeec0f
 
 name:           aoc2020
 version:        0.1.0.0
@@ -22,8 +22,36 @@ extra-source-files:
 library
   exposed-modules:
       Day1
+      Day10
+      Day11
+      Day12
+      Day13
+      Day14
+      Day15
+      Day16
+      Day17
+      Day18
+      Day19
       Day2
+      Day20
+      Day21
+      Day22
+      Day23
+      Day24
+      Day25
+      Day26
+      Day27
+      Day28
+      Day29
       Day3
+      Day30
+      Day31
+      Day4
+      Day5
+      Day6
+      Day7
+      Day8
+      Day9
   other-modules:
       Paths_aoc2020
   hs-source-dirs:
@@ -43,11 +71,67 @@ test-suite spec
   main-is: Spec.hs
   other-modules:
       Day1
+      Day10
+      Day11
+      Day12
+      Day13
+      Day14
+      Day15
+      Day16
+      Day17
+      Day18
+      Day19
       Day2
+      Day20
+      Day21
+      Day22
+      Day23
+      Day24
+      Day25
+      Day26
+      Day27
+      Day28
+      Day29
       Day3
+      Day30
+      Day31
+      Day4
+      Day5
+      Day6
+      Day7
+      Day8
+      Day9
+      Day10Spec
+      Day11Spec
+      Day12Spec
+      Day13Spec
+      Day14Spec
+      Day15Spec
+      Day16Spec
+      Day17Spec
+      Day18Spec
+      Day19Spec
       Day1Spec
+      Day20Spec
+      Day21Spec
+      Day22Spec
+      Day23Spec
+      Day24Spec
+      Day25Spec
+      Day26Spec
+      Day27Spec
+      Day28Spec
+      Day29Spec
       Day2Spec
+      Day30Spec
+      Day31Spec
       Day3Spec
+      Day4Spec
+      Day5Spec
+      Day6Spec
+      Day7Spec
+      Day8Spec
+      Day9Spec
       Paths_aoc2020
   hs-source-dirs:
       src
