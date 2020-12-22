@@ -1,0 +1,53 @@
+name:                aoc2020
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/mjhopkins/aoc2020#readme
+license:             BSD3
+author:              Mark Hopkins
+maintainer:          markjohnhopkins@gmail.com
+copyright:           Mark Hopkins
+category:            Experimental
+extra-source-files:
+- README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - containers
+  - unordered-containers
+  - mtl
+  - transformers
+  - regex-tdfa
+  # - lens
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wredundant-constraints
+- -fno-warn-unused-imports
+- -fno-warn-name-shadowing
+- -Werror=incomplete-patterns
+
+library:
+  source-dirs: src
+
+tests:
+  spec:
+    main: Spec.hs
+    source-dirs: 
+      - src
+      - test
+    dependencies:
+      - aoc2020
+      - tasty
+      - HUnit
+      - tasty-hunit
+      - hedgehog 
+      - tasty-hedgehog
+
+# executables:
+#   aoc2020:
+#     source-dirs:      app
+#     main:             Main.hs

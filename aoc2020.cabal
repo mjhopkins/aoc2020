@@ -1,0 +1,69 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 10317e33fee298216a0cee699146849d3b271a6200a2f3805b774fdc11664707
+
+name:           aoc2020
+version:        0.1.0.0
+category:       Experimental
+homepage:       https://github.com/mjhopkins/aoc2020#readme
+author:         Mark Hopkins
+maintainer:     markjohnhopkins@gmail.com
+copyright:      Mark Hopkins
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+library
+  exposed-modules:
+      Day1
+      Day2
+      Day3
+  other-modules:
+      Paths_aoc2020
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -fno-warn-unused-imports -fno-warn-name-shadowing -Werror=incomplete-patterns
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , mtl
+    , regex-tdfa
+    , transformers
+    , unordered-containers
+  default-language: Haskell2010
+
+test-suite spec
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Day1
+      Day2
+      Day3
+      Day1Spec
+      Day2Spec
+      Day3Spec
+      Paths_aoc2020
+  hs-source-dirs:
+      src
+      test
+  ghc-options: -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -fno-warn-unused-imports -fno-warn-name-shadowing -Werror=incomplete-patterns
+  build-depends:
+      HUnit
+    , aoc2020
+    , base >=4.7 && <5
+    , containers
+    , hedgehog
+    , mtl
+    , regex-tdfa
+    , tasty
+    , tasty-hedgehog
+    , tasty-hunit
+    , transformers
+    , unordered-containers
+  default-language: Haskell2010
