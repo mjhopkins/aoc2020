@@ -1,14 +1,5 @@
 module Main where
 
-import qualified Day1Spec
-import qualified Day2Spec
-import qualified Day3Spec
-import qualified Day4Spec
-import qualified Day5Spec
-import qualified Day6Spec
-import qualified Day7Spec
-import qualified Day8Spec
-import qualified Day9Spec
 import qualified Day10Spec
 import qualified Day11Spec
 import qualified Day12Spec
@@ -19,6 +10,7 @@ import qualified Day16Spec
 import qualified Day17Spec
 import qualified Day18Spec
 import qualified Day19Spec
+import qualified Day1Spec
 import qualified Day20Spec
 import qualified Day21Spec
 import qualified Day22Spec
@@ -29,17 +21,25 @@ import qualified Day26Spec
 import qualified Day27Spec
 import qualified Day28Spec
 import qualified Day29Spec
+import qualified Day2Spec
 import qualified Day30Spec
 import qualified Day31Spec
+import qualified Day3Spec
+import qualified Day4Spec
+import qualified Day5Spec
+import qualified Day6Spec
+import qualified Day7Spec
+import qualified Day8Spec
+import qualified Day9Spec
 
-import Test.Tasty
+import           Test.Tasty
 
 main :: IO ()
 main = defaultMain $ testGroup "Tests"
   [ testGroup "Unit Tests" unitTests ]
 
-unitTests :: [TestTree]   
-unitTests =   
+unitTests :: [TestTree]
+unitTests =
   [ Day1Spec.unitTests
   , Day2Spec.unitTests
   , Day3Spec.unitTests

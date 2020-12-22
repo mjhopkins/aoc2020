@@ -1,8 +1,8 @@
 module Day18Spec where
 
-import Test.Tasty
-import Test.Tasty.HUnit
-import Day18
+import           Day18
+import           Test.Tasty
+import           Test.Tasty.HUnit
 
 unitTests :: TestTree
 unitTests = testGroup "Day18"

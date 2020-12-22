@@ -1,6 +1,6 @@
 module Day1 where
 
-import Data.List
+import           Data.List
 
 firstSolution :: [Int] -> Int
 firstSolution
@@ -8,17 +8,17 @@ firstSolution
   . allSolutions
 
 allSolutions :: [Int] -> [Int]
-allSolutions is = 
+allSolutions is =
   [i * j | i <- is, j <- is \\ [i], i + j == 2020]
 
-runFile :: FilePath -> IO Int  
-runFile f = 
+runFile :: FilePath -> IO Int
+runFile f =
   readFile f >>= return . firstSolution . map read . lines
 
 sum3 :: [Int] -> Int
-sum3 is 
+sum3 is
   = headOrFail $
-  [ i * j * k 
+  [ i * j * k
   | i <- is
   , j <- is \\ [i]
   , k <- is \\ [i, j]
@@ -29,8 +29,8 @@ headOrFail :: [a] -> a
 headOrFail l =
   if null l then error "no solution" else head l
 
-input :: [Int] 
-input = 
+input :: [Int]
+input =
   [ 1834
   , 1546
   , 1119

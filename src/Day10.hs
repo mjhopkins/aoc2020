@@ -1,6 +1,4 @@
 module Day10 where
 
-
-import System.IO.Unsafe
-
+import           System.IO.Unsafe
 

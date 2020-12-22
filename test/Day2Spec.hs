@@ -1,15 +1,15 @@
 module Day2Spec where
 
-import Test.Tasty
-import Test.Tasty.HUnit
-import Day2
+import           Day2
+import           Test.Tasty
+import           Test.Tasty.HUnit
 
 unitTests :: TestTree
-unitTests = testGroup "Day2" 
+unitTests = testGroup "Day2"
   [ day2, day2', day2'' ]
 
 day2 :: TestTree
-day2 = testCase "Count valid lines" $ 
+day2 = testCase "Count valid lines" $
   countValidLines sample @?= 2
 
 day2' :: TestTree

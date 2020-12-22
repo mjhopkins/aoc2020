@@ -1,17 +1,17 @@
 module Day1Spec where
 
-import Test.Tasty
-import Test.Tasty.HUnit
-import Day1
+import           Day1
+import           Test.Tasty
+import           Test.Tasty.HUnit
 
 unitTests :: TestTree
-unitTests = testGroup "Day1" 
+unitTests = testGroup "Day1"
   [ day1
-  , day1' 
-  ]  
+  , day1'
+  ]
 
-sample :: [Int] 
-sample = 
+sample :: [Int]
+sample =
   [ 1721
   , 979
   , 366
@@ -21,8 +21,8 @@ sample =
   ]
 
 day1 :: TestTree
-day1 = testCase "First result" $ 
+day1 = testCase "First result" $
   firstSolution sample @?= 514579
 
-day1' = testCase "All results" $ 
+day1' = testCase "All results" $
   sum3 sample @?= 241861950
