@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 65e115eed344a30a037d83ae7e953f4b5e4c84ef59d359fc099cf850b0eeec0f
+-- hash: 380a282101217f532c0e32f64a8c6f4a29954be473cc0525cf83bcf6b2513891
 
 name:           aoc2020
 version:        0.1.0.0
@@ -56,10 +56,11 @@ library
       Paths_aoc2020
   hs-source-dirs:
       src
-  ghc-options: -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -fno-warn-unused-imports -fno-warn-name-shadowing -Werror=incomplete-patterns
+  ghc-options: -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -fno-warn-unused-imports -fno-warn-name-shadowing -Werror=incomplete-patterns -Werror=missing-methods
   build-depends:
       base >=4.7 && <5
     , containers
+    , extra
     , mtl
     , regex-tdfa
     , transformers
@@ -136,12 +137,14 @@ test-suite spec
   hs-source-dirs:
       src
       test
-  ghc-options: -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -fno-warn-unused-imports -fno-warn-name-shadowing -Werror=incomplete-patterns
+  ghc-options: -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -fno-warn-unused-imports -fno-warn-name-shadowing -Werror=incomplete-patterns -Werror=missing-methods
   build-depends:
       HUnit
     , aoc2020
     , base >=4.7 && <5
     , containers
+    , deepseq
+    , extra
     , hedgehog
     , mtl
     , regex-tdfa

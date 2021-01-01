@@ -18,6 +18,7 @@ day2' = testCase "Second interpretation" $
   where
     f = uncurry validate' . parseLine
 
+day2'' :: TestTree
 day2'' = testCase "Count with second interpretation" $
   countValidLines' sample @=? 1
 
