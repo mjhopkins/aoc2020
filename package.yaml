@@ -19,6 +19,8 @@ dependencies:
   - transformers
   - regex-tdfa
   - extra
+  - parsec
+  - safe
   # - lens
 
 ghc-options:

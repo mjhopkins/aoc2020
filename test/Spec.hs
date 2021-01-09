@@ -40,13 +40,14 @@ main = defaultMain $ testGroup "Tests"
 
 unitTests :: [TestTree]
 unitTests =
-  [ Day1Spec.unitTests
-  , Day2Spec.unitTests
-  , Day3Spec.unitTests
-  , Day4Spec.unitTests
-  , Day5Spec.unitTests
-  , Day6Spec.unitTests
-  , Day7Spec.unitTests
+  [ 
+  --   Day1Spec.unitTests
+  -- , Day2Spec.unitTests
+  -- , Day3Spec.unitTests
+  -- , Day4Spec.unitTests
+  -- , Day5Spec.unitTests
+  -- , Day6Spec.unitTests
+    Day7Spec.unitTests
   , Day8Spec.unitTests
   , Day9Spec.unitTests
   , Day10Spec.unitTests
